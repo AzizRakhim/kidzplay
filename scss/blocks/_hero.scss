@@ -1,0 +1,141 @@
+.hero {
+  background-image: url("https://cutewallpaper.org/21/animated-wallpaper-gifs/Animated-Gif-Background-1920x1080-Free-Hd-Gif-Wallpapers-.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  height: 100vh;
+  width: 100%;
+  &__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+    text-shadow: 2px 2px 8px #efefef;
+  }
+  &__main {
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    padding-bottom: 120px;
+    justify-content: space-between;
+  }
+  &__text {
+    width: 100%;
+    color: #fff;
+    max-width: 500px;
+    line-height: 20px;
+    text-shadow: 2px 2px 8px #efefef;
+    letter-spacing: 3px;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    perspective: 500;
+  }
+  &__btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 900;
+    margin-right: 16px;
+    padding: 14px 60px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 3px solid transparent;
+
+    &:nth-child(1) {
+      background-color: rgb(32, 201, 32);
+      &:hover {
+        background-color: transparent;
+        border: 3px solid rgb(32, 201, 32);
+      }
+      &:active {
+        background-color: rgb(18, 116, 18);
+      }
+    }
+    &:nth-child(2) {
+      background-color: orange;
+      // animation: btn2 7s 0.3s linear both infinite;
+
+      &:hover {
+        background-color: transparent;
+        border: 3px solid orange;
+      }
+      &:active {
+        background-color: rgb(164, 114, 21);
+      }
+    }
+    &:nth-child(3) {
+      background-color: red;
+      &:hover {
+        border: 3px solid red;
+        background-color: transparent;
+        transform: translateZ(180px);
+      }
+      &:active {
+        background-color: rgb(154, 18, 18);
+      }
+    }
+  }
+  &__play {
+    margin: 0 auto;
+    text-align: center;
+    a {
+      text-decoration: none !important;
+    }
+  }
+  &__play-btn {
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 18px 40px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid transparent;
+    background-color: #d06e06;
+    transition: all 0.3s ease !important;
+    &:hover {
+      color: #d06e06;
+      background: #fff;
+      border: 2px solid #d06e06;
+    }
+    &:active {
+      border: 2px solid rgb(158, 158, 8);
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      margin-left: 14px;
+    }
+  }
+}
+
+.anim {
+  animation: playBtn 0.7s both linear;
+}
+@keyframes playBtn {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  75% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}

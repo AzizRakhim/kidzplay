@@ -1,0 +1,164 @@
+.header {
+  padding: 20px 0px;
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo-div {
+    width: 248px;
+    height: 85px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    width: auto;
+    height: 50px;
+    display: flex;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    &:hover i {
+      color: #d06e06;
+    }
+    .bxl-instagram {
+      cursor: pointer;
+      font-size: 30px;
+      transition: all 0.3s ease;
+      color: #fff;
+    }
+    .bxl-linkedin {
+      cursor: pointer;
+      font-size: 30px;
+      transition: all 0.3s ease;
+      color: #fff;
+    }
+    .bxl-telegram {
+      cursor: pointer;
+      font-size: 30px;
+      transition: all 0.3s ease;
+      color: #fff;
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid transparent;
+    }
+  }
+  &__span-botton {
+    top: 20px;
+    left: 65px;
+    opacity: 0;
+    width: 15px;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #fff;
+  }
+  &__span-botton2 {
+    position: absolute;
+    top: 6px;
+    transform: rotate(140deg);
+    width: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    left: 40px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+  }
+  &__span-botton3 {
+    position: absolute;
+    top: 6px;
+    transform: rotate(40deg);
+    width: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    right: 40px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+  }
+  &__hover-main {
+    top: 100%;
+    opacity: 0;
+    left: -60px;
+    width: 150px;
+    height: auto;
+    z-index: -50;
+    display: none;
+    padding: 20px;
+    position: absolute;
+    transition: all 0.5s ease;
+    animation: item1 0.5s ease;
+    justify-content: space-around;
+  }
+  &__hover-box {
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__hover-box2 {
+    margin-top: 30px;
+  }
+  &__item:hover {
+    .header__hover-main {
+      // top: 40px;
+      opacity: 1;
+      z-index: 60;
+      display: flex;
+    }
+    .header__span-botton {
+      width: 20px;
+      opacity: 1;
+    }
+    .header__span-botton2 {
+      width: 20px;
+      opacity: 1;
+    }
+    .header__span-botton3 {
+      width: 20px;
+      opacity: 1;
+    }
+  }
+  @keyframes item1 {
+    0% {
+      transform: translateY(40px);
+    }
+    100% {
+      transform: translateY(0px);
+      z-index: 100 !important;
+    }
+  }
+  &__links-avatar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  &__head-avatar {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

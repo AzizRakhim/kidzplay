@@ -14,3 +14,11 @@ body {
   background-color: #fff;
   font-family: "Righteous", cursive, sans-serif;
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1440px;
+  transition: all 0.3s ease;
+}
