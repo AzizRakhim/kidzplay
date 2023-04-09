@@ -1,0 +1,300 @@
+// HERO START
+
+.game {
+  background-image: url('../assets/media/videos/gam-bg.gif');
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 100% !important;
+  min-height: 100vh !important;
+  background-repeat: repeat;
+  margin-top: -1px;
+  padding-bottom: 50px;
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    background: linear-gradient(180deg, #E1E1E1 0%, #FFFFFF 100%);
+    box-shadow: -3.94749e-14px 40.2667px 80.5333px rgba(51, 51, 51, 0.1665), inset 1.04389e-14px -10.6483px 10.6483px #D9D9D9, inset -1.04389e-14px 10.6483px 10.6483px #FFFFFF;
+
+    width: 200px;
+    height: 60px;
+    border-radius: 12px;
+
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 54px;
+
+    color: green;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  }
+}
+
+.bg-gradient1 span,
+.bg-gradient1:before {
+  @include gradientBg(180deg, #fa7e29, #F6682F);
+}
+
+.fancy-button {
+  display: inline-block;
+  margin: 20px;
+  font-family: 'Heebo', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #ffffff;
+  position: relative;
+
+  &.bg-gradient1 {
+    text-shadow: 0px 0px 1px #BF4C28;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    right: 10px;
+    z-index: -1;
+    border-radius: 2em;
+    filter: blur(14px) brightness(0.9);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+  }
+
+  i {
+    margin-top: -2px;
+    font-size: 1.265em;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  span {
+    display: inline-block;
+    padding: 16px 20px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    span {
+      filter: brightness(.9) contrast(1.2);
+      transform: scale(0.96);
+    }
+
+    &:before {
+      bottom: 3px;
+      filter: blur(6px) brightness(0.8);
+    }
+  }
+
+  &:active span {
+    filter: brightness(.75) contrast(1.7);
+  }
+}
+
+.reshuffle-button {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 5px;
+  height: 50px;
+  min-width: 100px;
+  background: $button-bg-color;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px darken($button-bg-color, 0%);
+  border-bottom: 2px solid darken($button-bg-color, 3%);
+
+  &:hover {
+    background: darken($button-bg-color, 5%);
+    box-shadow: 0 4px 1px darken($button-bg-color, 5%);
+    border-bottom: 2px solid darken($button-bg-color, 8%);
+    transition: all 0.1s ease-in;
+  }
+
+  &:active {
+    transform: translateY(4px);
+    border-bottom-width: 2px;
+    box-shadow: none;
+  }
+}
+
+// HEADER END
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('../assets/media/images/gamer-card.jpg');
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 90px 10px #d06e06;
+}
+
+#buttons-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.button {
+  position: absolute;
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 18px 22px;
+  text-transform: uppercase;
+}
+
+.button:nth-child(3n) {
+  background-color: red;
+}
+
+.button:nth-child(2n) {
+  background-color: green;
+}
+
+.button:nth-child(4n) {
+  background-color: black;
+}
+
+.button:nth-child(5n) {
+  background-color: brown;
+}
+
+.button.clicked {
+  background-color: #00FF00 !important;
+}
+
+.button.matched {
+  background-color: orange !important;
+}
+
+// HERO END
+
+// MODAL START
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 600px;
+  height: 400px;
+}
+
+.modal-header h2 {
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trophy-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+}
+
+// MODAL END
