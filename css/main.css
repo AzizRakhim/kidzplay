@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,13 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -58,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -78,13 +70,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +153,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +162,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -189,9 +170,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +180,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +191,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,19 +211,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -263,20 +237,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,17 +255,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -303,10 +272,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -346,21 +313,22 @@ template {
 *::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #fff;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap column;
-          flex-flow: wrap column;
+  min-height: 100vh;
+  flex-flow: wrap column;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1440px;
+  transition: all 0.3s ease;
 }
 
 .container {
@@ -368,4 +336,306 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-/*# sourceMappingURL=main.css.map */
+
+.hero {
+  background-image: url("https://cutewallpaper.org/21/animated-wallpaper-gifs/Animated-Gif-Background-1920x1080-Free-Hd-Gif-Wallpapers-.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  height: 100vh;
+  width: 100%;
+}
+.hero__title {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin: 0px !important;
+  margin-bottom: 20px !important;
+  text-shadow: 2px 2px 8px #efefef;
+}
+.hero__main {
+  display: flex;
+  padding-top: 80px;
+  align-items: center;
+  padding-bottom: 120px;
+  justify-content: space-between;
+}
+.hero__text {
+  width: 100%;
+  color: #fff;
+  max-width: 500px;
+  line-height: 20px;
+  text-shadow: 2px 2px 8px #efefef;
+  letter-spacing: 3px;
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  perspective: 500;
+}
+.hero__btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 900;
+  margin-right: 16px;
+  padding: 14px 60px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 3px solid transparent;
+}
+.hero__btn:nth-child(1) {
+  background-color: rgb(32, 201, 32);
+}
+.hero__btn:nth-child(1):hover {
+  background-color: transparent;
+  border: 3px solid rgb(32, 201, 32);
+}
+.hero__btn:nth-child(1):active {
+  background-color: rgb(18, 116, 18);
+}
+.hero__btn:nth-child(2) {
+  background-color: orange;
+}
+.hero__btn:nth-child(2):hover {
+  background-color: transparent;
+  border: 3px solid orange;
+}
+.hero__btn:nth-child(2):active {
+  background-color: rgb(164, 114, 21);
+}
+.hero__btn:nth-child(3) {
+  background-color: red;
+}
+.hero__btn:nth-child(3):hover {
+  border: 3px solid red;
+  background-color: transparent;
+  transform: translateZ(180px);
+}
+.hero__btn:nth-child(3):active {
+  background-color: rgb(154, 18, 18);
+}
+.hero__play {
+  margin: 0 auto;
+  text-align: center;
+}
+.hero__play a {
+  text-decoration: none !important;
+}
+.hero__play-btn {
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 18px 40px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid transparent;
+  background-color: #d06e06;
+  transition: all 0.3s ease !important;
+}
+.hero__play-btn:hover {
+  color: #d06e06;
+  background: #fff;
+  border: 2px solid #d06e06;
+}
+.hero__play-btn:active {
+  border: 2px solid rgb(158, 158, 8);
+}
+.hero__play-btn img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 14px;
+}
+
+.anim {
+  animation: playBtn 0.7s both linear;
+}
+
+@keyframes playBtn {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  75% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+.header {
+  padding: 20px 0px;
+}
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo-div {
+  width: 248px;
+  height: 85px;
+}
+.header__logo-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  width: auto;
+  height: 50px;
+  display: flex;
+  list-style: none;
+  position: relative;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.header__item:hover i {
+  color: #d06e06;
+}
+.header__item .bxl-instagram {
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.header__item .bxl-linkedin {
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.header__item .bxl-telegram {
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.header__item button {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.header__span-botton {
+  top: 20px;
+  left: 65px;
+  opacity: 0;
+  width: 15px;
+  position: absolute;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #fff;
+}
+.header__span-botton2 {
+  position: absolute;
+  top: 6px;
+  transform: rotate(140deg);
+  width: 15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  left: 40px;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+.header__span-botton3 {
+  position: absolute;
+  top: 6px;
+  transform: rotate(40deg);
+  width: 15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  right: 40px;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+.header__hover-main {
+  top: 100%;
+  opacity: 0;
+  left: -60px;
+  width: 150px;
+  height: auto;
+  z-index: -50;
+  display: none;
+  padding: 20px;
+  position: absolute;
+  transition: all 0.5s ease;
+  animation: item1 0.5s ease;
+  justify-content: space-around;
+}
+.header__hover-box img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.header__hover-box img:hover {
+  transform: scale(1.2);
+}
+.header__hover-box2 {
+  margin-top: 30px;
+}
+.header__item:hover .header__hover-main {
+  opacity: 1;
+  z-index: 60;
+  display: flex;
+}
+.header__item:hover .header__span-botton {
+  width: 20px;
+  opacity: 1;
+}
+.header__item:hover .header__span-botton2 {
+  width: 20px;
+  opacity: 1;
+}
+.header__item:hover .header__span-botton3 {
+  width: 20px;
+  opacity: 1;
+}
+@keyframes item1 {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+    z-index: 100 !important;
+  }
+}
+.header__links-avatar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header__head-avatar {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.header__head-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */
