@@ -242,20 +242,18 @@
   &__form-avatar-submit {
     width: 100%;
     padding: 10px;
+    outline: none;
+    color: #fff;
     cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
     text-align: center;
+    letter-spacing: 3px;
     border-radius: 20px;
+    text-decoration: none;
     background: #d06e06;
     transition: all 0.3s ease;
     border: 3px solid #d06e06;
-    a {
-      outline: none;
-      color: #fff;
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: 3px;
-      text-decoration: none;
-    }
     &:hover {
       background: transparent;
     }
@@ -267,4 +265,7 @@
   &::placeholder {
     color: #ff0606 !important;
   }
+}
+.remove {
+  display: none;
 }

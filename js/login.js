@@ -51,6 +51,8 @@ imgHandler(avatar)
 const email = document.querySelector("#email")
 const submit = document.querySelector("#submit")
 const username = document.querySelector("#username")
+const submitACT = document.querySelector('#submitACT')
+const submitDIS = document.querySelector('#submitDIS')
 let usernameValue = ""
 let emailValue = ""
 
@@ -61,16 +63,22 @@ email.addEventListener('change', (e) => {
   emailValue = e.target.value
 })
 
-submit.addEventListener("click", () => {
+submitACT.addEventListener("click", () => {
   if (usernameValue.length !== 0 && emailValue.length !== 0) {
     email.classList.remove('error')
     username.classList.remove('error')
     localStorage.setItem('email', emailValue)
     localStorage.setItem('avatarID', avatarID)
     localStorage.setItem('username', usernameValue)
+    submitACT.setAttribute('href', './home.html');
+    submitACT.click()
   }
   else {
     email.classList.add('error')
     username.classList.add('error')
   }
 })
+
+
+
+

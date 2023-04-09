@@ -58,8 +58,6 @@
     }
     &:nth-child(2) {
       background-color: orange;
-      // animation: btn2 7s 0.3s linear both infinite;
-
       &:hover {
         background-color: transparent;
         border: 3px solid orange;
@@ -73,7 +71,6 @@
       &:hover {
         border: 3px solid red;
         background-color: transparent;
-        transform: translateZ(180px);
       }
       &:active {
         background-color: rgb(154, 18, 18);

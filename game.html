@@ -1,99 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>Najot Competition</title>
-    <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <!-- HERO START  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Najot Competition</title>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <section id="game" class="game">
-      <div class="game__container">
-        <!-- HEADER START -->
+<body>
+  <!-- HERO START  -->
 
-        <div class="game__header">
-          <a href="./index.html " class="fancy-button bg-gradient1"
-            ><span><i class="fa-solid fa-house"></i>Home</span></a
-          >
+  <section id="game" class="game">
+    <div class="game__container">
+      <!-- HEADER START -->
 
-          <div class="game__timer-container">
-            <div class="game__timer">
-              <span id="minutes">00</span>
-              :
-              <span id="seconds">20</span>
-            </div>
-          </div>
+      <div class="game__header">
+        <a href="./home.html " class="fancy-button bg-gradient1"><span><i class="fa-solid fa-house"></i>Home</span></a>
 
-          <div class="center">
-            <input
-              class="reshuffle-button"
-              type="button"
-              value="Reshuffle"
-              id="reshuffle-button"
-            />
+        <div class="game__timer-container">
+          <div class="game__timer">
+            <span id="minutes">00</span>
+            :
+            <span id="seconds">20</span>
           </div>
         </div>
 
-        <!-- HEADER END -->
-
-        <div class="card-container">
-          <div id="buttons-container"></div>
+        <div class="center">
+          <input class="reshuffle-button" type="button" value="Reshuffle" id="reshuffle-button" />
         </div>
       </div>
-    </section>
 
-    <!-- HERO END -->
+      <!-- HEADER END -->
 
-    <!-- MODAL -->
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Congratulations!</h2>
-        </div>
-        <div class="modal-body">
-          <div class="score-container">
-            <img
-              src="https://media.istockphoto.com/id/1168757141/vector/gold-trophy-with-the-name-plate-of-the-winner-of-the-competition.jpg?s=612x612&w=0&k=20&c=ljsP4p0yuJnh4f5jE2VwXfjs96CC0x4zj8CHUoMo39E="
-              alt="Trophy icon"
-              class="trophy-icon"
-            />
-            <p class="score">Your Score: <span id="user-score"></span></p>
-          </div>
-          <p class="message">
-            Great job! You've earned a score of
-            <span id="user-score-text"></span>. Keep practicing and try to
-            improve your score next time.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button id="start-btn">Restart</button>
-        </div>
+      <div class="card-container">
+        <div id="buttons-container"></div>
       </div>
     </div>
+  </section>
 
-    <script src="js/game.js"></script>
-  </body>
+  <!-- HERO END -->
+
+  <!-- MODAL -->
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Congratulations!</h2>
+      </div>
+      <div class="modal-body">
+        <div class="score-container">
+          <img
+            src="https://media.istockphoto.com/id/1168757141/vector/gold-trophy-with-the-name-plate-of-the-winner-of-the-competition.jpg?s=612x612&w=0&k=20&c=ljsP4p0yuJnh4f5jE2VwXfjs96CC0x4zj8CHUoMo39E="
+            alt="Trophy icon" class="trophy-icon" />
+          <p class="score">Your Score: <span id="user-score"></span></p>
+        </div>
+        <p class="message">
+          Great job! You've earned a score of
+          <span id="user-score-text"></span>. Keep practicing and try to
+          improve your score next time.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button id="start-btn">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+
 </html>
