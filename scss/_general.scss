@@ -1,13 +1,13 @@
 *,
 *::before,
-*::after{
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: sans-serif;
+body {
+  font-family: 'Righteous', cursive, sans-serif;
   background-color: #fff;
   min-height: 100vh;
   display: flex;
